@@ -10,6 +10,7 @@ Use Functions
 
 #From the data given below:
 
+```
 
 const data = [
   {
@@ -263,3 +264,5 @@ const data = [
     }
   }
 ]
+
+```
