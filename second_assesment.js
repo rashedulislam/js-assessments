@@ -1,11 +1,3 @@
-# js-assessments two
-
-## Assignment on callback
-
-## From the data given below complete the task:
-
-```
-
 const processorFunc = (callback) => {
   const data = {
     page: 2,
@@ -59,9 +51,13 @@ const processorFunc = (callback) => {
   };
   // process data to make a array of fullnames
   // print full names using callback function
+  let datas = data.data;
+  let persons = datas.map((item) => {
+    return { fullName: item.first_name + " " + item.last_name };
+  });
+  callback(persons);
 };
-
-
+//console.log(processorFunc());
 const mainFunc = () => {
   // do not change this function
   processorFunc((data) => {
@@ -71,5 +67,3 @@ const mainFunc = () => {
   });
 };
 mainFunc();
-
-```
