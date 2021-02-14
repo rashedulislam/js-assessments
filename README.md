@@ -1,268 +1,90 @@
-# js-assessments one
+# JS-Assessments Three
 
 
-### 1. all pro subscribers.
-### 2. Sum of ages
-### 3. {id: ?, email: ?} of pro subscribers
-### 4. list of all users whose id is odd number
+### Solve following function using given data.
 
-##Use Functions
+```
+    const calcMaxAverage = (callback) => {
+      // write code here
+    };
+    ​
+    const printAnalyticsUsingMap = () => {
+      const weatherMap = new Map();
+      // key of this map will be the date.
+      // Value will be an object containing max and min temperature
+      // Like this: key = 18-6-2020 and value = { max: 39, min: 27 }
+    ​
+      // print map now
+    };
+    ​
+    const sortAnalyticsData = () => {
+      // return a sorted array where there will be an object in every index
+      // the structure of object will be like this: { day: "1-1-2020", temperature: 23 }
+      // data will be sorted in ascending order against averageTemperature
+    }
+    ​
+    // do not change this function
+    const mainFunc = () => {
+      // print max average temperature with this func
+      calcMaxAverage((maxAverageTemperature) => {
+        console.log(maxAverageTemperature);
+      });
+    ​
+      printAnalyticsUsingMap();
+    ​
+      // bonus - it is not mandatory. But, you should give it a try
+      // uncomment the following code and try
+      // const sortedData = sortAnalyticsData();
+      // sortedData.forEach((data) => {
+      //   console.log(`Day: ${data.day}, Temperature: ${data.temperature}`);
+      // });
+    };
+    ​
+    mainFunc();
+
+```
 
 ## From the data given below:
 
 ```
 
-const data = [
-  {
-    "id": 1,
-    "age": 20,
-    "isPro": true,
-    "name": "Leanne Graham",
-    "username": "Bret",
-    "email": "Sincere@april.biz",
-    "address": {
-      "street": "Kulas Light",
-      "suite": "Apt. 556",
-      "city": "Gwenborough",
-      "zipcode": "92998-3874",
-      "geo": {
-        "lat": "-37.3159",
-        "lng": "81.1496"
-      }
-    },
-    "phone": "1-770-736-8031 x56442",
-    "website": "hildegard.org",
-    "company": {
-      "name": "Romaguera-Crona",
-      "catchPhrase": "Multi-layered client-server neural-net",
-      "bs": "harness real-time e-markets"
-    }
-  },
-  {
-    "id": 2,
-    "age": 17,
-    "isPro": true,
-    "name": "Ervin Howell",
-    "username": "Antonette",
-    "email": "Shanna@melissa.tv",
-    "address": {
-      "street": "Victor Plains",
-      "suite": "Suite 879",
-      "city": "Wisokyburgh",
-      "zipcode": "90566-7771",
-      "geo": {
-        "lat": "-43.9509",
-        "lng": "-34.4618"
-      }
-    },
-    "phone": "010-692-6593 x09125",
-    "website": "anastasia.net",
-    "company": {
-      "name": "Deckow-Crist",
-      "catchPhrase": "Proactive didactic contingency",
-      "bs": "synergize scalable supply-chains"
-    }
-  },
-  {
-    "id": 3,
-    "age": 24,
-    "isPro": false,
-    "name": "Clementine Bauch",
-    "username": "Samantha",
-    "email": "Nathan@yesenia.net",
-    "address": {
-      "street": "Douglas Extension",
-      "suite": "Suite 847",
-      "city": "McKenziehaven",
-      "zipcode": "59590-4157",
-      "geo": {
-        "lat": "-68.6102",
-        "lng": "-47.0653"
-      }
-    },
-    "phone": "1-463-123-4447",
-    "website": "ramiro.info",
-    "company": {
-      "name": "Romaguera-Jacobson",
-      "catchPhrase": "Face to face bifurcated interface",
-      "bs": "e-enable strategic applications"
-    }
-  },
-  {
-    "id": 4,
-    "age": 27,
-    "isPro": false,
-    "name": "Patricia Lebsack",
-    "username": "Karianne",
-    "email": "Julianne.OConner@kory.org",
-    "address": {
-      "street": "Hoeger Mall",
-      "suite": "Apt. 692",
-      "city": "South Elvis",
-      "zipcode": "53919-4257",
-      "geo": {
-        "lat": "29.4572",
-        "lng": "-164.2990"
-      }
-    },
-    "phone": "493-170-9623 x156",
-    "website": "kale.biz",
-    "company": {
-      "name": "Robel-Corkery",
-      "catchPhrase": "Multi-tiered zero tolerance productivity",
-      "bs": "transition cutting-edge web services"
-    }
-  },
-  {
-    "id": 5,
-    "age": 15,
-    "isPro": true,
-    "name": "Chelsey Dietrich",
-    "username": "Kamren",
-    "email": "Lucio_Hettinger@annie.ca",
-    "address": {
-      "street": "Skiles Walks",
-      "suite": "Suite 351",
-      "city": "Roscoeview",
-      "zipcode": "33263",
-      "geo": {
-        "lat": "-31.8129",
-        "lng": "62.5342"
-      }
-    },
-    "phone": "(254)954-1289",
-    "website": "demarco.info",
-    "company": {
-      "name": "Keebler LLC",
-      "catchPhrase": "User-centric fault-tolerant solution",
-      "bs": "revolutionize end-to-end systems"
-    }
-  },
-  {
-    "id": 6,
-    "age": 30,
-    "isPro": true,
-    "name": "Mrs. Dennis Schulist",
-    "username": "Leopoldo_Corkery",
-    "email": "Karley_Dach@jasper.info",
-    "address": {
-      "street": "Norberto Crossing",
-      "suite": "Apt. 950",
-      "city": "South Christy",
-      "zipcode": "23505-1337",
-      "geo": {
-        "lat": "-71.4197",
-        "lng": "71.7478"
-      }
-    },
-    "phone": "1-477-935-8478 x6430",
-    "website": "ola.org",
-    "company": {
-      "name": "Considine-Lockman",
-      "catchPhrase": "Synchronised bottom-line interface",
-      "bs": "e-enable innovative applications"
-    }
-  },
-  {
-    "id": 7,
-    "age": 16,
-    "isPro": false,
-    "name": "Kurtis Weissnat",
-    "username": "Elwyn.Skiles",
-    "email": "Telly.Hoeger@billy.biz",
-    "address": {
-      "street": "Rex Trail",
-      "suite": "Suite 280",
-      "city": "Howemouth",
-      "zipcode": "58804-1099",
-      "geo": {
-        "lat": "24.8918",
-        "lng": "21.8984"
-      }
-    },
-    "phone": "210.067.6132",
-    "website": "elvis.io",
-    "company": {
-      "name": "Johns Group",
-      "catchPhrase": "Configurable multimedia task-force",
-      "bs": "generate enterprise e-tailers"
-    }
-  },
-  {
-    "id": 8,
-    "age": 15,
-    "isPro": true,
-    "name": "Nicholas Runolfsdottir V",
-    "username": "Maxime_Nienow",
-    "email": "Sherwood@rosamond.me",
-    "address": {
-      "street": "Ellsworth Summit",
-      "suite": "Suite 729",
-      "city": "Aliyaview",
-      "zipcode": "45169",
-      "geo": {
-        "lat": "-14.3990",
-        "lng": "-120.7677"
-      }
-    },
-    "phone": "586.493.6943 x140",
-    "website": "jacynthe.com",
-    "company": {
-      "name": "Abernathy Group",
-      "catchPhrase": "Implemented secondary concept",
-      "bs": "e-enable extensible e-tailers"
-    }
-  },
-  {
-    "id": 9,
-    "age": 29,
-    "isPro": true,
-    "name": "Glenna Reichert",
-    "username": "Delphine",
-    "email": "Chaim_McDermott@dana.io",
-    "address": {
-      "street": "Dayna Park",
-      "suite": "Suite 449",
-      "city": "Bartholomebury",
-      "zipcode": "76495-3109",
-      "geo": {
-        "lat": "24.6463",
-        "lng": "-168.8889"
-      }
-    },
-    "phone": "(775)976-6794 x41206",
-    "website": "conrad.com",
-    "company": {
-      "name": "Yost and Sons",
-      "catchPhrase": "Switchable contextually-based project",
-      "bs": "aggregate real-time technologies"
-    }
-  },
-  {
-    "id": 10,
-    "age": 35,
-    "isPro": false,
-    "name": "Clementina DuBuque",
-    "username": "Moriah.Stanton",
-    "email": "Rey.Padberg@karina.biz",
-    "address": {
-      "street": "Kattie Turnpike",
-      "suite": "Suite 198",
-      "city": "Lebsackbury",
-      "zipcode": "31428-2261",
-      "geo": {
-        "lat": "-38.2386",
-        "lng": "57.2232"
-      }
-    },
-    "phone": "024-648-3804",
-    "website": "ambrose.net",
-    "company": {
-      "name": "Hoeger LLC",
-      "catchPhrase": "Centralized empowering task-force",
-      "bs": "target end-to-end models"
-    }
-  }
-]
+    const randomWeatherData = {
+      "1-1-2020": {
+        averageTemperature: 23,
+        unit: "degree celsius",
+        maxTemperature: 27,
+        minTemperature: 17,
+      },
+      "15-2-2020": {
+        averageTemperature: 25,
+        unit: "degree celsius",
+        maxTemperature: 32,
+        minTemperature: 21,
+      },
+      "11-3-2020": {
+        averageTemperature: 27,
+        unit: "degree celsius",
+        maxTemperature: 33,
+        minTemperature: 25,
+      },
+      "21-4-2020": {
+        averageTemperature: 33,
+        unit: "degree celsius",
+        maxTemperature: 37,
+        minTemperature: 27,
+      },
+      "15-5-2020": {
+        averageTemperature: 32,
+        unit: "degree celsius",
+        maxTemperature: 37,
+        minTemperature: 26,
+      },
+      "18-6-2020": {
+        averageTemperature: 31,
+        unit: "degree celsius",
+        maxTemperature: 39,
+        minTemperature: 27,
+      },
+    };
 
 ```
