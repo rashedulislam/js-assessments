@@ -1,14 +1,14 @@
 # js-assessments one
 
 
-## 1. all pro subscribers.
-## 2. Sum of ages
-## 3. {id: ?, email: ?} of pro subscribers
-## 4. list of all users whose id is odd number
+### 1. all pro subscribers.
+### 2. Sum of ages
+### 3. {id: ?, email: ?} of pro subscribers
+### 4. list of all users whose id is odd number
 
 Use Functions 
 
-#From the data given below:
+## From the data given below:
 
 ```
 
