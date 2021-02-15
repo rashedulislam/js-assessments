@@ -1,90 +1,36 @@
-# JS-Assessments Three
+# JS-Assessments Four
 
 
-### Solve following function using given data.
-
-```
-    const calcMaxAverage = (callback) => {
-      // write code here
-    };
-    ​
-    const printAnalyticsUsingMap = () => {
-      const weatherMap = new Map();
-      // key of this map will be the date.
-      // Value will be an object containing max and min temperature
-      // Like this: key = 18-6-2020 and value = { max: 39, min: 27 }
-    ​
-      // print map now
-    };
-    ​
-    const sortAnalyticsData = () => {
-      // return a sorted array where there will be an object in every index
-      // the structure of object will be like this: { day: "1-1-2020", temperature: 23 }
-      // data will be sorted in ascending order against averageTemperature
-    }
-    ​
-    // do not change this function
-    const mainFunc = () => {
-      // print max average temperature with this func
-      calcMaxAverage((maxAverageTemperature) => {
-        console.log(maxAverageTemperature);
-      });
-    ​
-      printAnalyticsUsingMap();
-    ​
-      // bonus - it is not mandatory. But, you should give it a try
-      // uncomment the following code and try
-      // const sortedData = sortAnalyticsData();
-      // sortedData.forEach((data) => {
-      //   console.log(`Day: ${data.day}, Temperature: ${data.temperature}`);
-      // });
-    };
-    ​
-    mainFunc();
+### Solve following questions.
 
 ```
+JS Assessment:
 
-## From the data given below:
+01. Create a human class where there will be basic attributes 
+    like fullName , age , gender , email , phone ...
+02. Create a project class where there will be id , budget ,
+    startTime , endTime, arrayOfEmployees ...
+03. Create a client class where there will be some more attributes
+    like companyName , division , listOfProjects ...
+04. Create an employee class where there will be some more attributes
+    like salary , arrayOfSkills ...
 
-```
+05. Suppose all human are Bangladeshi here.
+    You can check validity of phone number of every human 
+    (Starts with 017/018/016/019/013, Has 11 digits, only contains digits) with a function ...
 
-    const randomWeatherData = {
-      "1-1-2020": {
-        averageTemperature: 23,
-        unit: "degree celsius",
-        maxTemperature: 27,
-        minTemperature: 17,
-      },
-      "15-2-2020": {
-        averageTemperature: 25,
-        unit: "degree celsius",
-        maxTemperature: 32,
-        minTemperature: 21,
-      },
-      "11-3-2020": {
-        averageTemperature: 27,
-        unit: "degree celsius",
-        maxTemperature: 33,
-        minTemperature: 25,
-      },
-      "21-4-2020": {
-        averageTemperature: 33,
-        unit: "degree celsius",
-        maxTemperature: 37,
-        minTemperature: 27,
-      },
-      "15-5-2020": {
-        averageTemperature: 32,
-        unit: "degree celsius",
-        maxTemperature: 37,
-        minTemperature: 26,
-      },
-      "18-6-2020": {
-        averageTemperature: 31,
-        unit: "degree celsius",
-        maxTemperature: 39,
-        minTemperature: 27,
-      },
-    };
+06. You can also check validity of age of every human (0 - 120) with a function ...
+
+07. You can check salary of all employees combined of any project with a function ...
+
+08. Client should have a function to check if division is valid (Dhaka, Rangpur, 
+    Rajshahi, Mymensingh, Sylhet, Khulna, Barishal, Chittagong). Also, client should have 
+    a function to calculate expenditure per month.
+
+09. Now create a client. With a for loop, create 10 employees with random value. With a for loop,
+    create 4 projects projects where you will randomly assign 1-3 employees.
+
+10. Show expenditure per month of each project. Show expenditure per month of client.
+
 
 ```
